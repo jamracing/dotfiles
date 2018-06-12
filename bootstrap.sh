@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Install x-code
+xcode-select --install
+
 #install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
