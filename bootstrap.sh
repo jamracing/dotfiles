@@ -24,6 +24,8 @@ dotfile_linker --path .
 #install zsh / oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+#clone out the zsh auto-suggestion repo
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 #Color Iterm setup
 #Launch iTerm 2. Get the latest version at iterm2.com
 #Type CMD+i (⌘+i)
