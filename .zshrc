@@ -53,6 +53,7 @@ DISABLE_AUTO_UPDATE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git terraform brew zsh-completions )
 autoload -U compinit && compinit
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,4 +86,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
