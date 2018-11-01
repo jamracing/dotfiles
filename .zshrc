@@ -2,7 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/joshlove/.oh-my-zsh
+export ZSH=/Users/$USER/.oh-my-zsh
+
+# Source chtf - Terraform version switcher
+if [[ -f /usr/local/share/chtf/chtf.sh ]]; then
+    source "/usr/local/share/chtf/chtf.sh"
+fi
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -51,9 +56,8 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git terraform brew zsh-completions )
+plugins=(kubectl git terraform brew zsh-completions zsh-autosuggestions )
 autoload -U compinit && compinit
-plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -70,9 +74,6 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
