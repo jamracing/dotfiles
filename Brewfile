@@ -16,10 +16,12 @@ brew "ansible"
 brew "terraform"
 brew "curl"
 brew "jq"
+brew "zsh-autosuggestions"
+brew "chtf"
 
 #taps
 tap "caskroom/cask"
-
+tap "Yleisradio/terraforms"
 cask 'google-chrome'
 cask 'iterm2'
 cask 'slack'
@@ -31,3 +33,4 @@ cask 'virtualbox'
 cask 'vlc'
 cask 'atom'
 cask 'discord'
+cask 'visual-studio-code'
